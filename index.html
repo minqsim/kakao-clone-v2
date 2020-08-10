@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
     <title>Chats | Kakao Clone</title>
 </head>
 
@@ -33,33 +34,60 @@
         </div>
     </header>
     <main class="chats">
-        <ui class="chats__list">
-            <li class="chats__chat">
+        <ul class="chats__list">
+            <li class="chats__chat chat">
                 <a href="chat.html">
-                    <div class="chat__column">
-                        <img src="images/profile.jpeg" alt="" class="chaat__g-avatar">
-                        <div class="chat__content">
-                            <div class="chat__username"><span class="chat__username">Lynn</span><span
-                                    class="chat__preview">Going home</span></div>
+                    <div class="chats__chat friend friend--lg">
+                        <div class="friend__column">
+                            <img src="images/miqsim.jpg" class="m-avatar friend__avatar" />
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Lynn
+                                </span>
+                                <span class="friend__bottom-text">
+                                    Going home!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="friend__column">
+                            <span class="chat__timestamp">
+                                March 8
+                            </span>
                         </div>
                     </div>
-                    <div class="chat__column"><span class="chat__timestamp">Yesterday</span></div>
+
                 </a>
             </li>
-        </ui>
+        </ul>
     </main>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="friends.html" class="nav__list-link"><i class="far fa-user"></i></a>
+            <li class="nav__list-item">
+                <a href="friends.html" class="nav__list-link">
+                    <i class="far fa-user"></i>
+                </a>
             </li>
-            <li class="nav__list-item"><a href="index.html" class="nav__list-link"><i class="fas fa-comment"></i></a>
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">8</div>
+                    <i class="fas fa-comment"></i>
+                </a>
             </li>
-            <li class="nav__list-item"><a href="find.html" class="nav__list-link"><i class="fas fa-search"></i></a>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
             </li>
-            <li class="nav__list-item"><a href="more.html" class="nav__list-link"><i class="fas fa-ellipsis-h"></i></a>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
             </li>
         </ul>
     </nav>
+    <div class="bigScreen">
+        <span class="bigScreen__text">Please make your screen small !</span>
+    </div>
 </body>
 
 </html>
